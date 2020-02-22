@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const validationSchema = Yup.object({
@@ -29,6 +30,7 @@ const Login = () => {
 
   return (
     <div>
+      <Link to="/">Go Home</Link>
       <h1>Login Screen</h1>
       <form onSubmit={formik.handleSubmit}>
         <fieldset>

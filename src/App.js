@@ -1,9 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
+import Loadable from "react-loadable";
 import { Router, Route, Switch } from "react-router-dom";
 import { useAuth } from "./context/auth";
 import history from "./utils/history";
 import "./App.css";
-import { Login, Home } from "./routes";
+import { Home } from "./routes";
+
+const Loading = () => <p>Loading...</p>;
+
+const LoadableLogin = Loadable({
+  loader: () => import("./routes/login"),
+  loading: Loading
+});
 
 function App() {
   const auth = useAuth();
@@ -16,7 +24,7 @@ function App() {
             <Home />
           </Route>
           <Route path="/login">
-            <Login />
+            <LoadableLogin />
           </Route>
         </Switch>
       </Router>

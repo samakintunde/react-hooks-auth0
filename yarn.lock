@@ -10853,7 +10853,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:^15.5.0, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -11100,6 +11100,7 @@ fsevents@^1.2.7:
     history: ^4.10.1
     react: ^16.12.0
     react-dom: ^16.12.0
+    react-loadable: ^5.5.0
     react-router-dom: ^5.1.2
     react-scripts: 3.4.0
     yup: ^0.28.1
@@ -11170,6 +11171,17 @@ fsevents@^1.2.7:
   version: 16.12.0
   resolution: "react-is@npm:16.12.0"
   checksum: 2/ddcafd1c3f37118880c7d21720d8481842b1cda8f2724d81a1c103919c5764a697fefd65451396d47ac634ea7850df7829ef0b1094a84b1d18fbfa0c9400b7c9
+  languageName: node
+  linkType: hard
+
+"react-loadable@npm:^5.5.0":
+  version: 5.5.0
+  resolution: "react-loadable@npm:5.5.0"
+  dependencies:
+    prop-types: ^15.5.0
+  peerDependencies:
+    react: "*"
+  checksum: 2/fb14650fe86f20c2554e3645482ed67eb4ce0e46d72e06f91a7f57739e90b1b42c31e8597d7d415ee69bc16f85211bafec7b24ddadd7f3fe72c176f45931158d
   languageName: node
   linkType: hard
 
